@@ -30,8 +30,11 @@ class Lab3
 				}
 			licznikProb++;
 			}while(!win);
-			StringByilder
-			System.out.println("Brawo!!! Liczba prob="+licznikProb+"\nChcesz grac dalej?\nT/t-tak \ndowolny klawisz-nie");
+			StringBuilder sb=new StringBuilder();
+			sb.append("Brawo!!! Liczba prob=");
+			sb.append(licznikProb);
+			sb.append("\nChcesz grac dalej?\nT/t-tak \ndowolny klawisz-nie");
+			System.out.println(sb.toString());
 			continueGame=scanner.nextLine();
 			if(continueGame.equals("t")||continueGame.equals("T"))
 			{
